@@ -419,7 +419,7 @@ ul {
 
 /* footer */
 .footer {
-    margin: 50px 0;
+    margin-bottom: 0px auto 50px;
 }
 
 .footer-list {
