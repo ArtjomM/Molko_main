@@ -1,0 +1,559 @@
+html {
+    block-size: border-box;
+
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.body {
+    color: #151618;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: normal;
+    font-family: "Open Sans", sans-serif;
+    /* font-family: "Cormorant", serif; */
+    position: relative;
+}
+
+
+.header-top-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    padding-right: 10px;
+    max-height: 47px;
+}
+
+.header-top-wrapper::after {
+    border-bottom: 1px solid black;
+}
+
+.header-top-left {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.header-top-right {
+    width: 50%;
+    text-align: right;
+}
+
+.phone {
+    margin-right: 20px;
+    margin-left: 34px;
+}
+
+.mail {
+    margin-left: 34px;
+}
+
+.img-photo {
+    width: 20px;
+    position: absolute;
+}
+
+
+.image-language {
+    max-width: 24px;
+    border: 1px solid black;
+}
+
+.header-top-left>a {
+    padding: 8px;
+    justify-content: center;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 7px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.logo-svg {
+    width: 24px;
+    height: 24px;
+}
+
+.menu {
+    background-color: #F8F9FA;
+    max-height: 73px;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu__list-item {
+    display: flex;
+    margin-right: 20px;
+    margin-left: auto;
+    padding: 10px 10px;
+}
+
+.menu__list-item:last-child {
+    margin-right: 0;
+}
+
+.menu__list-link {
+    font-size: 20px;
+}
+
+.drop-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.drop__menu-item {
+    margin-bottom: 10px;
+}
+
+.dropdown a:hover {
+    color: red;
+}
+
+.drop-menu:hover .dropdown {
+    display: block;
+}
+
+
+
+/* slider */
+.slider-img {
+    vertical-align: middle;
+    height: 500px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container1,
+.slider {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    background-size: cover;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next,
+.prev {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+    min-width: 480px;
+    color: #f2f2f2;
+    font-size: 48px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.numbertitle {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    padding-left: auto;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    background-color: red;
+    padding: 16px 48px;
+    transform: translate(-50%, -50%);
+
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .8
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* Info */
+
+.for-us {
+    padding: 50px 0;
+    height: 165px;
+    background: #F8F9FA;
+}
+
+.for-us-title {
+    text-align: center;
+}
+
+.for-us-list {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 200px;
+    padding-top: 30px;
+}
+
+.for-us-item {
+    display: flex;
+    align-items: center;
+
+}
+
+.for-us-item-image {
+    height: 96px;
+    margin-right: 10px;
+}
+
+.for-us-item-p {
+    padding-bottom: 0px;
+}
+
+/* doing */
+
+
+.doing {
+    margin: 120px 0;
+}
+
+.doing-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.doing-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px, 40px;
+    justify-content: center;
+}
+
+.doing-item {
+    display: flex;
+    text-align: left;
+}
+
+.doing-image-first {
+    height: 253px;
+    max-width: 278px;
+}
+
+.doing-image-second {
+    max-height: 375px;
+    max-width: 278px;
+    order: 1;
+}
+
+.doing-description {
+    max-width: 230px;
+    max-height: 375px;
+    background: #F8F9FA;
+    padding: 20px;
+}
+
+
+.doing-description>h3 {
+    margin-bottom: 20px;
+}
+
+.doing-description>p {
+    height: 245px;
+}
+
+.more {
+    position: relative;
+    margin-top: auto;
+}
+
+.doing-description:hover {
+    background-color: #F46523;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.more:hover {
+    border-bottom: 2px solid white;
+}
+
+/* contact section */
+.contact-us-section {
+    background: #F46523;
+    height: 135px;
+}
+
+.contact-us-section-h2 {
+    text-align: center;
+    padding-top: 55px;
+    height: 100%;
+}
+
+/* footer */
+.footer {
+    margin: 50px 0;
+}
+
+.footer-list {
+    display: flex;
+    gap: 20px 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.footer-item {
+    max-width: 255px;
+    /* width: 100%; */
+    height: 100px;
+}
+
+.footer-phone {
+    width: 200px;
+    height: 100px;
+}
+
+.footer-h2 {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.footer-right {
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media(max-width: 1066px) {
+    .for-us-list {
+        gap: 20px 50px;
+    }
+}
+
+@media(max-width: 1000px) {
+    /* .for-us-list {
+        gap: 20px 50px;
+    } */
+
+    .footer-list {
+        display: flex;
+        gap: 20px 98px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-item {
+        width: 400px;
+        align-items: center;
+        display: block;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .for-us-list {
+        align-items: center;
+
+    }
+
+    .for-us-item {
+        justify-content: center;
+    }
+
+    .for-us {
+        height: auto;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .menu__list-item {
+        margin-right: 0;
+    }
+}
+
+@media(max-width: 650px) {
+    .menu-nav {
+        display: none;
+    }
+}
+
+
+@media(max-width: 505px) {
+    .numbertext {
+        min-width: 320px;
+    }
+}
+
+@media(max-width: 480px) {
+    .header-top-left {
+        width: 10%;
+    }
+
+    .header-top-right {
+        right: 20px;
+        position: absolute;
+    }
+
+    .doing {
+        margin: 60px 0;
+    }
+
+    .doing-item {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 360px;
+    }
+
+    .doing-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .doing-image-first,
+    .doing-image-second {
+        display: block;
+        width: 270px;
+      margin: 0 auto;
+    }
+
+
+}
+
+@media(max-width: 386px) {
+    .phone {
+        margin-right: 9px;
+        margin-left: 24px;
+    }
+
+    .doing-item {
+        width: 320px;
+    }
+
+    .numbertext {
+        min-width: 300px;
+    }
+}
+
+@media(max-width: 360px) {}
