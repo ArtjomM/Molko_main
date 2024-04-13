@@ -167,9 +167,8 @@ ul {
 /* slider */
 .slider-img {
     vertical-align: middle;
-    height: 500px;
+    height: 580px;
 }
-
 /* Position the image container (needed to position the left and right arrows) */
 .container1,
 .slider {
@@ -393,14 +392,15 @@ ul {
     color: white;
 }
 
-.more:after{
+.more:after {
     content: '';
     display: block;
     width: 0;
     height: 2px;
     background: white;
 }
-.more:hover:after{
+
+.more:hover:after {
     width: 100%;
     transition: width .3s;
 }
@@ -506,23 +506,7 @@ ul {
     }
 }
 
-
-@media(max-width: 505px) {
-    .numbertext {
-        min-width: 320px;
-    }
-}
-
-@media(max-width: 480px) {
-    .header-top-left {
-        width: 10%;
-    }
-
-    .header-top-right {
-        right: 20px;
-        position: absolute;
-    }
-
+@media(max-width: 544px) {
     .doing {
         margin: 60px 0;
     }
@@ -545,6 +529,24 @@ ul {
         width: 270px;
         margin: 0 auto;
     }
+}
+
+@media(max-width: 505px) {
+    .numbertext {
+        min-width: 320px;
+    }
+}
+
+@media(max-width: 480px) {
+    .header-top-left {
+        width: 10%;
+    }
+
+    .header-top-right {
+        right: 20px;
+        position: absolute;
+    }
+
 
 
 }
