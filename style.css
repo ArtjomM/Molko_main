@@ -357,17 +357,17 @@ ul {
 
 .doing-image-first {
     height: 253px;
-    max-width: 278px;
+    width: 270px;
 }
 
 .doing-image-second {
-    max-height: 375px;
-    max-width: 278px;
+    height: 375px;
+    width: 270px;
     order: 1;
 }
 
 .doing-description {
-    max-width: 230px;
+    width: 230px;
     max-height: 375px;
     background: #F8F9FA;
     padding: 20px;
@@ -383,6 +383,7 @@ ul {
 }
 
 .more {
+    display: inline-block;
     position: relative;
     margin-top: auto;
 }
@@ -390,11 +391,18 @@ ul {
 .doing-description:hover {
     background-color: #F46523;
     color: white;
-    border-bottom: 2px solid white;
 }
 
-.more:hover {
-    border-bottom: 2px solid white;
+.more:after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+}
+.more:hover:after{
+    width: 100%;
+    transition: width .3s;
 }
 
 /* contact section */
@@ -535,7 +543,7 @@ ul {
     .doing-image-second {
         display: block;
         width: 270px;
-      margin: 0 auto;
+        margin: 0 auto;
     }
 
 
