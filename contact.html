@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about-us.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <title>Свяжитесь с нами</title>
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <h1 class="about-title">Контакт</h1>
+    <section class="contact-form">
+        <div class="container">
+            <div class="contact-form-wrapper">
+                <div class="form-main">
+                    <form action="/action_page.php" class="form">
+                        <label for="fname">Контактное лицо</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Контактное лицо"><br>
+                        <label for="phone">Телефон</label><br>
+                        <input type="text" id="phone" name="phone"><br>
+                        <label for="email">Email</label><br>
+                        <input type="text" id="email" name="email"><br>
+                        <label for="message">Сообщение</label><br>
+                        <input type="text" id="message" name="message"><br><br>
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div>
+                <div class="contact-form-contact">
+                    <div class="contact-info">
+                        <h2>Контактная информация</h2>
+                        <h3>Адрес</h3>
+                        <p> Дом пушкина дом колотушкина</p>
+                        <h3>Телефоны</h3>
+                        <a href="" class="phone-block">37258434277</a>
+                        <a href="" class="phone-block">+37258434277</a>
+                        <h3 class="email-list">Email</h3>
+                        <a href="" class="email">artjommol001"gmail.com</a>
+                    </div>
+                    <div class="contact-name">
+                        <h3 class="name-first">Алексей Молчанов - директор</h3>
+                        <a href="">37258434277</a>
+                        <h3 class="name-second">Артём</h3>
+                        <a href="">37258434277</a>
+                        <h3 class="name-second">Андрей Молчанов</h3>
+                        <a href="">37258434277</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+</body>
+
+</html>
