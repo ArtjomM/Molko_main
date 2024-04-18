@@ -8,7 +8,7 @@ var autoplayInterval = setInterval(function () {
   document.getElementById("next").click();
 
 
-}, 3000); // Do this every 1 second, increase this!
+}, 3000); // Do this every 3 second, increase this!
 
 // Stop function added to button
 function stopAutoplay() {
@@ -33,7 +33,7 @@ function currentSlide(n) {
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
+  // var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = 1
   }
@@ -43,10 +43,10 @@ function showSlides(n) {
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+  // for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" active", "");
+  // }
 
   slides[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " active";
+  // dots[slideIndex - 1].className += " active";
 }
