@@ -1,4 +1,4 @@
-const mailPath = './mail.php'
+const mailPath = './contact-form/mail.php'
 
 document.querySelectorAll('.form').forEach((e) => {
 
