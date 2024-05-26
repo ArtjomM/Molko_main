@@ -167,134 +167,33 @@ body {
 }
 
 /* slider */
-.slider-img {
-  vertical-align: middle;
-  height: 580px;
-}
 
-/* Position the image container (needed to position the left and right arrows) */
-.container1,
-.slider {
-  position: relative;
-}
-
-/* Hide the images by default */
-.mySlides {
-  display: none;
-  background-size: cover;
-}
-
-/* Add a pointer when hovering over the thumbnail images */
-.cursor {
-  cursor: pointer;
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
+.top-slide__inner {
+  display: flex;
+  background-image: url(/images/download.jpg);
+  height: 700px;
+  width: 100%;
   color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.next,
-.prev {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  min-width: 480px;
-  color: #f2f2f2;
-  font-size: 48px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 30%;
-  left: 50%;
+.top_slide__content {
   text-align: center;
-  transform: translate(-50%, -50%);
+  width: 100%;
 }
 
-.numbertitle {
-  position: absolute;
-  color: white;
-  font-size: 20px;
-  padding-left: auto;
-  top: 50%;
-  left: 50%;
-  text-align: center;
-  background-color: red;
+.top-slide__title {
+  margin-top: 200px;
+  font-size: 5rem;
+}
+.top-slide__subtitle{
+  font-size: 5rem;
+  margin-bottom: 30px;
+}
+.top-slide__btn{
   padding: 16px 48px;
-  transform: translate(-50%, -50%);
+  border: 1px solid #f46523;
+  background-color: #f46523;
 }
-
-/* Container for image text */
-.caption-container {
-  text-align: center;
-  background-color: #222;
-  padding: 2px 16px;
-  color: white;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Six columns side by side */
-.column {
-  float: left;
-  width: 16.66%;
-}
-
-/* Add a transparency effect for thumnbail images */
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.8;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
 /* Info */
 
 .for-us {
