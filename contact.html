@@ -1,78 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about-us.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("/f&b/header.html");
+        $("#footer").load("/f&b/footer.html");
+      });
+    </script>
+    <title>Свяжитесь с нами</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="about-us.css" />
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-  <script>
-    $(function () {
-      $("#header").load("/f&b/header.html");
-      $("#footer").load("/f&b/footer.html");
-    });
-  </script>
-  <title>Свяжитесь с нами</title>
-</head>
+  <body>
+    <div id="header"></div>
+    <h1 class="about-title">Контакт</h1>
+    <section class="contact-form">
+      <div class="container">
+        <div class="contact-form-wrapper">
+          <div class="form-main">
+            <form class="form">
+              <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="Site Name" />
+              <input
+                type="hidden"
+                name="admin_email"
+                value="artjommol001@gmail.com"
+              />
+              <input type="hidden" name="form_subject" value="Form Subject 1" />
+              <!-- END Hidden Required Fields -->
 
-<body>
-  <div id="header"></div>
-  <h1 class="about-title">Контакт</h1>
-  <section class="contact-form">
-    <div class="container">
-      <div class="contact-form-wrapper">
-        <div class="form-main">
-          <form class="form">
-            <!-- Hidden Required Fields -->
-            <input type="hidden" name="project_name" value="Site Name" />
-            <input type="hidden" name="admin_email" value="artjommol001@gmail.com" />
-            <input type="hidden" name="form_subject" value="Form Subject 1" />
-            <!-- END Hidden Required Fields -->
-
-            <label for="fname">Контактное лицо</label><br />
-            <input type="text" id="fname" name="fname" placeholder="Контактное лицо" /><br />
-            <label for="phone">Телефон</label><br />
-            <input type="text" id="phone" name="phone" placeholder="Телефон" /><br />
-            <label for="email">Email</label><br />
-            <input type="email" id="email" name="email" placeholder="Почта" /><br />
-            <label for="message">Сообщение</label><br />
-            <textarea id="subject" name="subject" placeholder="Сообщение" class="textarea"></textarea><br />
-            <input type="submit" value="Отправить" />
-          </form>
-        </div>
-        <div class="contact-form-contact">
-          <div class="contact-info">
-            <h2>Контактная информация</h2>
-            <h3>Адрес</h3>
-            <p>Paul Kerese, 21003 Narva, Estonia</p>
-            <h3>Телефоны</h3>
-            <a href="" class="phone-block">37258434277</a>
-            <!-- <a href="" class="phone-block">+37258434277</a> -->
-            <h3 class="email-list">Email</h3>
-            <a href="" class="email">artjommol001"gmail.com</a>
+              <label for="fname">Контактное лицо</label><br />
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Контактное лицо"
+              /><br />
+              <label for="phone">Телефон</label><br />
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Телефон"
+              /><br />
+              <label for="email">Email</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Почта"
+              /><br />
+              <label for="message">Сообщение</label><br />
+              <textarea
+                id="subject"
+                name="subject"
+                placeholder="Сообщение"
+                class="textarea"
+              ></textarea
+              ><br />
+              <input type="submit" value="Отправить" />
+            </form>
           </div>
-          <div class="contact-name">
-            <h3 class="name-first">Алексей Молчанов - директор</h3>
-            <a href="">37258434277</a>
-            <h3 class="name-second">Артём</h3>
-            <a href="">37258434277</a>
-            <h3 class="name-second">Андрей Молчанов</h3>
-            <a href="">37258434277</a>
+          <div class="contact-form-contact">
+            <div class="contact-info">
+              <h2>Контактная информация</h2>
+              <h3>Адрес</h3>
+              <p>Paul Kerese, 21003 Narva, Estonia</p>
+              <h3>Телефоны</h3>
+              <a href="" class="phone-block">37258434277</a>
+              <!-- <a href="" class="phone-block">+37258434277</a> -->
+              <h3 class="email-list">Email</h3>
+              <a href="" class="email">artjommol001"gmail.com</a>
+            </div>
+            <div class="contact-name">
+              <h3 class="name-first">Алексей Молчанов - директор</h3>
+              <a href="">37258434277</a>
+              <h3 class="name-second">Артём</h3>
+              <a href="">37258434277</a>
+              <h3 class="name-second">Андрей Молчанов</h3>
+              <a href="">37258434277</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2032.613891929121!2d28.15795507665903!3d59.37278270754226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDIyJzIyLjAiTiAyOMKwMDknMzcuOSJF!5e0!3m2!1sen!2sfi!4v1713438824576!5m2!1sen!2sfi"
-    width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2032.613891929121!2d28.15795507665903!3d59.37278270754226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDIyJzIyLjAiTiAyOMKwMDknMzcuOSJF!5e0!3m2!1sen!2sfi!4v1713438824576!5m2!1sen!2sfi"
+      width="100%"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+    ></iframe>
 
-  <div id="footer"></div>
-  <script src="/Contact-form/script.js"></script>
-</body>
-
+    <div id="footer"></div>
+    <script src="/Contact-form/script.js"></script>
+  </body>
 </html>

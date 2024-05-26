@@ -1,140 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abous us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="about-us.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo1.svg" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header").load("/f&b/header.html");
+        $("#footer").load("/f&b/footer.html");
+      });
+    </script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abous us</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="about-us.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="/images/logo1.svg" />
-  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous"></script>
-  <script>
-    $(function () {
-      $("#header").load("/f&b/header.html");
-      $("#footer").load("/f&b/footer.html");
-    });
-  </script>
-</head>
-
-<body>
-  <!-- <div id="header"></div> -->
-  <header class="header" id="header">
-  <div class="container">
-    <div class="header-top-wrapper">
-      <div class="header-top-left">
-        <a href="index.html">
-          <img class="image-language" src="images/russian.png" alt="" />
-        </a>
-        <a href="#">
-          <img class="image-language" src="images/Est.png" alt="" />
-        </a>
+  <body>
+    <!-- <div id="header"></div> -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-top-wrapper">
+          <div class="header-top-left">
+            <a href="index.html">
+              <img class="image-language" src="images/russian.png" alt="" />
+            </a>
+            <a href="#">
+              <img class="image-language" src="images/Est.png" alt="" />
+            </a>
+          </div>
+          <div class="header-top-right">
+            <img src="images/phone.png" alt="" class="img-photo" />
+            <a href="#" class="phone">+372 58 43 42 77</a>
+            <img src="images/mail.svg" alt="" class="img-photo" />
+            <a href="#" class="mail">Почта</a>
+          </div>
+        </div>
       </div>
-      <div class="header-top-right">
-        <img src="images/phone.png" alt="" class="img-photo" />
-        <a href="#" class="phone">+372 58 43 42 77</a>
-        <img src="images/mail.svg" alt="" class="img-photo" />
-        <a href="#" class="mail">Почта</a>
-      </div>
-    </div>
-  </div>
 
-  <section class="menu">
-    <div class="container">
-      <div class="header-main">
-        <a href="/index.html" class="logo">
-          <img src="images/logo1.svg" alt="" class="logo-svg" />
-        </a>
-        <nav class="menu-nav">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a href="/index.html" class="menu__list-link">Главная</a>
-            </li>
-            <li class="menu__list-item">
-              <a href="/about-us.html" class="menu__list-link"> О фирме</a>
-            </li>
-            <li class="menu__list-item drop-menu">
-              <a href="" class="menu__list-link menu__list-arrow">Услуги &#11167;</a>
-              <ul class="dropdown">
-                <li class="drop__menu-item">
-                  <a href="teenused/aknad-ja-uksed.html" title="Окна и двери">Окна и двери</a>
+      <section class="menu">
+        <div class="container">
+          <div class="header-main">
+            <a href="/index.html" class="logo">
+              <img src="images/logo1.svg" alt="" class="logo-svg" />
+            </a>
+            <nav class="menu-nav">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a href="/index.html" class="menu__list-link">Главная</a>
                 </li>
-                <li class="drop__menu-item">
-                  <a href="#" title="Строительные работы">Строительные работы</a>
+                <li class="menu__list-item">
+                  <a href="/about-us.html" class="menu__list-link"> О фирме</a>
                 </li>
-                <li class="drop__menu-item">
-                  <a href="#" title="Строительная техника">Строительная техника</a>
+                <li class="menu__list-item drop-menu">
+                  <a href="" class="menu__list-link menu__list-arrow"
+                    >Услуги &#11167;</a
+                  >
+                  <ul class="dropdown">
+                    <li class="drop__menu-item">
+                      <a
+                        href="teenused/aknad-ja-uksed.html"
+                        title="Окна и двери"
+                        >Окна и двери</a
+                      >
+                    </li>
+                    <li class="drop__menu-item">
+                      <a href="#" title="Строительные работы"
+                        >Строительные работы</a
+                      >
+                    </li>
+                    <li class="drop__menu-item">
+                      <a href="#" title="Строительная техника"
+                        >Строительная техника</a
+                      >
+                    </li>
+                    <li class="drop__menu-item">
+                      <a href="#" title="Аренда помещений">Аренда помещений</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="drop__menu-item">
-                  <a href="#" title="Аренда помещений">Аренда помещений</a>
+                <li class="menu__list-item">
+                  <a href="" class="menu__list-link">Выполненые работы</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="/contact.html" class="menu__list-link">Контакт</a>
                 </li>
               </ul>
-            </li>
-            <li class="menu__list-item">
-              <a href="" class="menu__list-link">Выполненые работы</a>
-            </li>
-            <li class="menu__list-item">
-              <a href="/contact.html" class="menu__list-link">Контакт</a>
-            </li>
-          </ul>
-        </nav>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="about">
+      <h1 class="about-title">О фирме</h1>
+      <div class="container">
+        <h2 class="about-title-text">Mol&ko OU</h2>
+        <div class="about-text">
+          <p>
+            Строительная компания ILSTRO EHITUS OÜ успешно осуществляет свою
+            деятельность с 2006 года и за это время отлично зарекомендовала себя
+            не только в Ида-Вирумаа, но и по всей Эстонии. На счету фирмы
+            большое количество сданных в соответствии с требованиями договоров
+            объектов с положительными отзывами заказчиков. ILSTRO EHITUS OÜ
+            имеет большой опыт сотрудничества сосновными промышленными
+            предприятиямии организациями такими как Viru Keemia Grupp, NOVOTRADE
+            Invest AS, Enefit Kaevandused AS, Enefit Energiatootmine AS,
+            EastmanSpecialties OÜ, Tallinna Tehnikaülikool, Nuti Pesu и др.
+          </p>
+          <br />
+          <p>
+            Строительная компания ILSTRO EHITUS OÜ успешно осуществляет свою
+            деятельность с 2006 года и за это время отлично зарекомендовала себя
+            не только в Ида-Вирумаа, но и по всей Эстонии. На счету фирмы
+            большое количество сданных в соответствии с требованиями договоров
+            объектов с положительными отзывами заказчиков. ILSTRO EHITUS OÜ
+            имеет большой опыт сотрудничества сосновными промышленными
+            предприятиямии организациями такими как Viru Keemia Grupp, NOVOTRADE
+            Invest AS, Enefit Kaevandused AS, Enefit Energiatootmine AS,
+            EastmanSpecialties OÜ, Tallinna Tehnikaülikool, Nuti Pesu и др.
+          </p>
+          <br />
+          <p>
+            Сотрудники нашей фирмы - опытные, квалифицированные специалисты,
+            использующие накопленные знания обо всех современных видах ремонта,
+            имеющие отличную инструментальную базу и собственную строительную
+            технику. Поэтому мы можем гарантировать наивысшее качество работ и
+            материалов, соблюдение строительных норм и правил, строгое
+            соблюдение сроков выполнения работ и обязательств по договору. Над
+            проектами наших заказчиков работают высококвалифицированные
+            специалисты, готовые грамотно спланировать работы и составить смету
+            с учетом всех видов требуемых работ и материалов. Стоимость
+            строительных и ремонтных работ ориентирована на требования,
+            предпочтения и бюджет заказчика.
+          </p>
+          <br />
+          <p>
+            <strong
+              >С помощью строительной фирмы ILSTRO EHITUS OÜ любой наш клиент
+              может реализовать все свои желания при оптимальном расходе
+              бюджета!</strong
+            >
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
-</header>
-  <section class="about">
-    <h1 class="about-title">О фирме</h1>
-    <div class="container">
-      <h2 class="about-title-text">Mol&ko OU</h2>
-      <div class="about-text">
-        <p>
-          Строительная компания ILSTRO EHITUS OÜ успешно осуществляет свою
-          деятельность с 2006 года и за это время отлично зарекомендовала себя
-          не только в Ида-Вирумаа, но и по всей Эстонии. На счету фирмы
-          большое количество сданных в соответствии с требованиями договоров
-          объектов с положительными отзывами заказчиков. ILSTRO EHITUS OÜ
-          имеет большой опыт сотрудничества сосновными промышленными
-          предприятиямии организациями такими как Viru Keemia Grupp, NOVOTRADE
-          Invest AS, Enefit Kaevandused AS, Enefit Energiatootmine AS,
-          EastmanSpecialties OÜ, Tallinna Tehnikaülikool, Nuti Pesu и др.
-        </p>
-        <br />
-        <p>
-          Строительная компания ILSTRO EHITUS OÜ успешно осуществляет свою
-          деятельность с 2006 года и за это время отлично зарекомендовала себя
-          не только в Ида-Вирумаа, но и по всей Эстонии. На счету фирмы
-          большое количество сданных в соответствии с требованиями договоров
-          объектов с положительными отзывами заказчиков. ILSTRO EHITUS OÜ
-          имеет большой опыт сотрудничества сосновными промышленными
-          предприятиямии организациями такими как Viru Keemia Grupp, NOVOTRADE
-          Invest AS, Enefit Kaevandused AS, Enefit Energiatootmine AS,
-          EastmanSpecialties OÜ, Tallinna Tehnikaülikool, Nuti Pesu и др.
-        </p>
-        <br />
-        <p>
-          Сотрудники нашей фирмы - опытные, квалифицированные специалисты,
-          использующие накопленные знания обо всех современных видах ремонта,
-          имеющие отличную инструментальную базу и собственную строительную
-          технику. Поэтому мы можем гарантировать наивысшее качество работ и
-          материалов, соблюдение строительных норм и правил, строгое
-          соблюдение сроков выполнения работ и обязательств по договору. Над
-          проектами наших заказчиков работают высококвалифицированные
-          специалисты, готовые грамотно спланировать работы и составить смету
-          с учетом всех видов требуемых работ и материалов. Стоимость
-          строительных и ремонтных работ ориентирована на требования,
-          предпочтения и бюджет заказчика.
-        </p>
-        <br />
-        <p>
-          <strong>С помощью строительной фирмы ILSTRO EHITUS OÜ любой наш клиент
-            может реализовать все свои желания при оптимальном расходе
-            бюджета!</strong>
-        </p>
-      </div>
-    </div>
-  </section>
-  <div id="footer"></div>
-</body>
-
+    </section>
+    <div id="footer"></div>
+  </body>
 </html>

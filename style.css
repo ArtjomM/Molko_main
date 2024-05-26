@@ -87,7 +87,7 @@ body {
   border: 1px solid black;
 }
 
-.header-top-left>a {
+.header-top-left > a {
   padding: 8px;
   justify-content: center;
 }
@@ -185,11 +185,11 @@ body {
   margin-top: 200px;
   font-size: 5rem;
 }
-.top-slide__subtitle{
+.top-slide__subtitle {
   font-size: 5rem;
   margin-bottom: 30px;
 }
-.top-slide__btn{
+.top-slide__btn {
   padding: 16px 48px;
   border: 1px solid #f46523;
   background-color: #f46523;
@@ -280,13 +280,13 @@ body {
   padding: 20px;
 }
 
-.doing-description>h3 {
+.doing-description > h3 {
   margin-bottom: 20px;
   font-size: 20px;
   font-weight: 500;
 }
 
-.doing-description>p {
+.doing-description > p {
   height: 245px;
   font-size: 14px;
   font-weight: 400;
@@ -476,4 +476,5 @@ body {
   }
 }
 
-@media (max-width: 360px) {}
+@media (max-width: 360px) {
+}
