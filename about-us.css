@@ -41,7 +41,7 @@
   margin-right: 25px;
 }
 
-.form input, 
+.form input,
 textarea {
   background: transparent;
   border-radius: 5px;
@@ -94,6 +94,7 @@ textarea {
 .email {
   margin-bottom: 20px;
 }
+
 .textarea {
   /* width: 90%; */
   height: 180px;
@@ -107,15 +108,18 @@ textarea {
 .email-list {
   margin-top: 20px;
 }
+
 .contact-name {
   padding: 20px 20px;
   height: 200px;
   border-radius: 15px;
   box-shadow: 0 0 5px #ccc;
 }
+
 .name-second {
   margin-top: 20px;
 }
+
 .name-first,
 .name-second {
   margin-bottom: 4px;
