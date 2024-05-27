@@ -1,109 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="about-us.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
-    <script>
-      $(function () {
-        $("#header").load("/f&b/header.html");
-        $("#footer").load("/f&b/footer.html");
-      });
-    </script>
-    <title>Свяжитесь с нами</title>
-  </head>
 
-  <body>
-    <div id="header"></div>
-    <h1 class="about-title">Контакт</h1>
-    <section class="contact-form">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wdth,wght,YTLC@0,6..12,75..125,200..1000,440..540;1,6..12,75..125,200..1000,440..540&display=swap"
+    rel="stylesheet" />
+  <title>Свяжитесь с нами</title>
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header-top-wrapper">
+        <div class="header-top-left">
+          <a href="index.html">
+            <img class="image-language" src="images/russian.png" alt="" />
+          </a>
+          <a href="#">
+            <img class="image-language" src="images/Est.png" alt="" />
+          </a>
+        </div>
+        <div class="header-top-right">
+          <img src="images/phone.png" alt="" class="img-photo" />
+          <a href="#" class="phone">+372 58 43 42 77</a>
+          <img src="images/mail.svg" alt="" class="img-photo" />
+          <a href="#" class="mail">Почта</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu--close"></div>
+
+    <section class="menu">
       <div class="container">
-        <div class="contact-form-wrapper">
-          <div class="form-main">
-            <form class="form">
-              <!-- Hidden Required Fields -->
-              <input type="hidden" name="project_name" value="Site Name" />
-              <input
-                type="hidden"
-                name="admin_email"
-                value="artjommol001@gmail.com"
-              />
-              <input type="hidden" name="form_subject" value="Form Subject 1" />
-              <!-- END Hidden Required Fields -->
+        <div class="header-main">
+          <a href="/index.html" class="logo">
+            <img src="images/logo1.svg" alt="" class="logo-svg" />
+          </a>
+          <nav class="menu-nav">
 
-              <label for="fname">Контактное лицо</label><br />
-              <input
-                type="text"
-                id="fname"
-                name="fname"
-                placeholder="Контактное лицо"
-              /><br />
-              <label for="phone">Телефон</label><br />
-              <input
-                type="text"
-                id="phone"
-                name="phone"
-                placeholder="Телефон"
-              /><br />
-              <label for="email">Email</label><br />
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Почта"
-              /><br />
-              <label for="message">Сообщение</label><br />
-              <textarea
-                id="subject"
-                name="subject"
-                placeholder="Сообщение"
-                class="textarea"
-              ></textarea
-              ><br />
-              <input type="submit" value="Отправить" />
-            </form>
-          </div>
-          <div class="contact-form-contact">
-            <div class="contact-info">
-              <h2>Контактная информация</h2>
-              <h3>Адрес</h3>
-              <p>Paul Kerese, 21003 Narva, Estonia</p>
-              <h3>Телефоны</h3>
-              <a href="" class="phone-block">37258434277</a>
-              <!-- <a href="" class="phone-block">+37258434277</a> -->
-              <h3 class="email-list">Email</h3>
-              <a href="" class="email">artjommol001"gmail.com</a>
-            </div>
-            <div class="contact-name">
-              <h3 class="name-first">Алексей Молчанов - директор</h3>
-              <a href="">37258434277</a>
-              <h3 class="name-second">Артём</h3>
-              <a href="">37258434277</a>
-              <h3 class="name-second">Андрей Молчанов</h3>
-              <a href="">37258434277</a>
-            </div>
-          </div>
+            <button class="menu__btn">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+
+            <ul class="menu__list">
+
+              <li class="menu__close">
+                <button class="menu__close-btn">
+                  <img src="/close.svg" alt="">
+                </button>
+              </li>
+
+              <li class="menu__list-item">
+                <a href="/index.html" class="menu__list-link">Главная</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="/about-us.html" class="menu__list-link">О фирме</a>
+              </li>
+              <!-- Mobile version -->
+              <li class="menu__list-item-mobile">
+                <a href="/about-us.html" class="menu__list-link">Услуги</a>
+              </li>
+
+
+              <li class="menu__list-item drop-menu">
+                <a href="" class="menu__list-link menu__list-arrow">Услуги &#11167;</a>
+                <ul class="dropdown drop__down-mobile">
+                  <li class="drop__menu-item">
+                    <a href="teenused/aknad-ja-uksed.html" title="Окна и двери">Окна и двери</a>
+                  </li>
+                  <li class="drop__menu-item">
+                    <a href="#" title="Строительные работы">Строительные работы</a>
+                  </li>
+                  <li class="drop__menu-item">
+                    <a href="#" title="Строительная техника">Строительная техника</a>
+                  </li>
+                  <li class="drop__menu-item">
+                    <a href="#" title="Аренда помещений">Аренда помещений</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu__list-item">
+                <a href="" class="menu__list-link">Выполненые работы</a>
+              </li>
+              <li class="menu__list-item">
+                <a href="/contact.html" class="menu__list-link">Контакт</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </section>
+  </header>
+  <h1 class="about-title">Контакт</h1>
+  <section class="contact-form">
+    <div class="container">
+      <div class="contact-form-wrapper">
+        <div class="form-main">
+          <form class="form">
+            <!-- Hidden Required Fields -->
+            <input type="hidden" name="project_name" value="Site Name" />
+            <input type="hidden" name="admin_email" value="artjommol001@gmail.com" />
+            <input type="hidden" name="form_subject" value="Form Subject 1" />
+            <!-- END Hidden Required Fields -->
 
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2032.613891929121!2d28.15795507665903!3d59.37278270754226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDIyJzIyLjAiTiAyOMKwMDknMzcuOSJF!5e0!3m2!1sen!2sfi!4v1713438824576!5m2!1sen!2sfi"
-      width="100%"
-      height="450"
-      style="border: 0"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
+            <label for="fname">Контактное лицо</label><br />
+            <input type="text" id="fname" name="fname" placeholder="Контактное лицо" /><br />
+            <label for="phone">Телефон</label><br />
+            <input type="text" id="phone" name="phone" placeholder="Телефон" /><br />
+            <label for="email">Email</label><br />
+            <input type="email" id="email" name="email" placeholder="Почта" /><br />
+            <label for="message">Сообщение</label><br />
+            <textarea id="subject" name="subject" placeholder="Сообщение" class="textarea"></textarea><br />
+            <input type="submit" value="Отправить" />
+          </form>
+        </div>
+        <div class="contact-form-contact">
+          <div class="contact-info">
+            <h2>Контактная информация</h2>
+            <h3>Адрес</h3>
+            <p>Paul Kerese, 21003 Narva, Estonia</p>
+            <h3>Телефоны</h3>
+            <a href="" class="phone-block">37258434277</a>
+            <!-- <a href="" class="phone-block">+37258434277</a> -->
+            <h3 class="email-list">Email</h3>
+            <a href="" class="email">artjommol001"gmail.com</a>
+          </div>
+          <div class="contact-name">
+            <h3 class="name-first">Алексей Молчанов - директор</h3>
+            <a href="">37258434277</a>
+            <h3 class="name-second">Артём</h3>
+            <a href="">37258434277</a>
+            <h3 class="name-second">Андрей Молчанов</h3>
+            <a href="">37258434277</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <div id="footer"></div>
-    <script src="/Contact-form/script.js"></script>
-  </body>
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d2032.613891929121!2d28.15795507665903!3d59.37278270754226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNTnCsDIyJzIyLjAiTiAyOMKwMDknMzcuOSJF!5e0!3m2!1sen!2sfi!4v1713438824576!5m2!1sen!2sfi"
+    width="100%" height="450" style="border: 0" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <footer class="footer">
+    <section class="contact-us-section">
+      <div class="container">
+        <h2 class="contact-us-section-h2">
+          Свяжитесь с нами <a href="tel:+37258434277" class="more">+37258434277</a>
+        </h2>
+      </div>
+    </section>
+
+    <div class="container">
+      <ul class="footer-list">
+        <li class="footer-item">
+          <h2 class="footer-h2">Mol&ko OY</h2>
+          <div class="footer-description">
+            <p>Reg.number: 11234474</p>
+            <p>Сектор и сфера: Строительство жилых и нежилых зданий</p>
+          </div>
+        </li>
+        <li class="footer-item">
+          <h2 class="footer-h2">Адрес</h2>
+          <div class="footer-description">
+            <p>Paul Kerese, 21003 Narva, Estonia</p>
+            <!-- <p>Сектор и сфера: Строительство жилых и нежилых зданий</p> -->
+          </div>
+        </li>
+        <li class="footer-item">
+          <h2 class="footer-h2">Телефон</h2>
+          <div class="footer-description">
+            <p><a href="tel:+37258434277">+37258434277</a></p>
+            <p><a href="tel:+0402227694">0402227694</a></p>
+          </div>
+        </li>
+        <li class="footer-item">
+          <h2 class="footer-h2">E-mail</h2>
+          <div class="footer-description">
+            <p>molko@gmail.com</p>
+            <p>artjommol001@gmail.com</p>
+          </div>
+        </li>
+      </ul>
+      <h2 class="footer-right">Copyright © 2024 All Rights Reserved</h2>
+    </div>
+  </footer>
+  <script src="/Contact-form/script.js"></script>
+</body>
+
 </html>
