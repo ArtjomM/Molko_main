@@ -1,7 +1,7 @@
 const swiper = new Swiper('.swiper', {
-  autoplay: {
-    delay: 3000,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  // },
   loop: true,
   // Navigation arrows
   navigation: {
